@@ -1,6 +1,11 @@
+@import './utils/container';
+@import './utils/font-family';
+@import './utils/hidden';
+@import './utils/mixins';
+@import './utils/variables';
+
 @import './common';
 @import './example';
-@import './container';
 @import './hero-header';
 @import './products';
 @import './about';
@@ -11,6 +16,3 @@
 @import './footer';
 @import './modal';
 @import './button';
-@import './font-family';
-@import './hidden';
-@import './mixins';
