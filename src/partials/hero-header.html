@@ -1,3 +1,107 @@
-<header>
-  <h1>Header</h1>
-</header>
+<!--Шапка сайта-->
+<header class="header">
+  <div class="container">
+    <div class="header__navigation">
+      <a href="" class="header__logo">
+          <img src="./images/logoicecreame1280.png" alt="logo ise-cream" width="50" />
+        &nbsp;&nbsp;ice cream
+      </a>
+      <button type="button" class="header__open-button">
+        <svg class="header__icon-button" width="20" height="12" aria-label="Переключатель мобильного меню">
+          <use class="header__icon-menu" href="./images/symbol-defs.svg#icon-Burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="mob-menu is-hidden">
+    <div class="container">
+      <button type="button" class="mob-menu__close-button">
+        <svg class="mob-menu__icon-button" width="12" height="12" aria-label="Переключатель мобильного меню">
+          <use class="mob-menu__icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <div class="mob-menu__main">
+        <button type="button" class="mob-menu__button" data-modal-open>Buy now
+          <svg class="mob-menu__button--arrow" width="5" height="8">
+            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu__list">
+          <li class="mob-menu__item">
+            <a href="" class="mob-menu__link mob-menu__link--current">Home</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="" class="mob-menu__link">About us</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="" class="mob-menu__link">How it’s made?</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="" class="mob-menu__link">Our products</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="" class="mob-menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navigations__tablet">
+    <div class="container tablet">
+      <a href="" class="header__logo">
+        <img src="./images/logoicecreame1280.png" alt="logo ise-cream" width="50" />
+        &nbsp;&nbsp;ice cream
+      </a>
+      <ul class="desktop-menu__list">
+        <li class="desktop-menu__item">
+          <a href="" class="desktop-menu__link desktop-menu__link--current">Home</a>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="" class="desktop-menu__link">About us</a>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="" class="desktop-menu__link">How it’s made?</a>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="" class="desktop-menu__link">Our products</a>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="" class="desktop-menu__link">Contact</a>
+        </li>
+      </ul>
+      <div class="button__tablet-main">
+        <button type="button" class="header__open-button">
+          <svg class="header__icon-button" width="20" height="12" aria-label="Переключатель мобильного меню">
+            <use class="header__icon-menu" href="./images/symbol-defs.svg#icon-Burger"></use>
+          </svg>
+        </button>
+        <button type="button" class="tablet-menu__button" data-modal-open>Buy now
+          <svg class="tablet-menu__button--arrow" width="5" height="8">
+            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+<!--Уникальное содержание страницы-->
+<main>
+  <!-- Блок герой-->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero__title">ice cream <br>
+      made with <br>
+      <span class="hero__title--accent">passion</span></h1>
+      <ul ckass="buttom-produrts__item">
+        <li class="buttom-produrts__list">
+          <a href="" class="buttom-produrts__link">Products</a>
+        </li>
+        <li class="buttom-produrts__list">
+          <a href="" class="buttom-produrts__link link--accent">How it’s made?</a>
+        </li>
+      </ul>
+    </div>
+    
+  </section>
+</main>
