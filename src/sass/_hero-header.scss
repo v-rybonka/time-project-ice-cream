@@ -18,6 +18,19 @@
     text-transform: uppercase;
 
     color: #D41443;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 37px;
+        // padding-bottom: 60px;
+    }
 }    
 
 .header__navigation {
@@ -31,10 +44,15 @@
 }
 
 .header__open-button {
+    @media screen and (min-width: 1280px) {
+        display: none;
+    } 
+
     padding: 10px 0;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    
 
     // fill: #14d44e;
 
@@ -53,6 +71,7 @@
     }
 }
 
+// ------------------mobile menu-----------------
 .mob-menu {
     display: none;
     position: fixed;
@@ -148,17 +167,24 @@
     color: #D41443;
 }
 
-// tablet
+// ------------------tablet menu-----------------
 .navigations__tablet {
     @media screen and (max-width: 767px) {
         display: none;
     } 
+
+    @media screen and (min-width: 1280px) {
+        // display: flex;
+        // justify-content: space-between;
+    } 
+
+        
 }
 
 .tablet {
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
+    justify-content: center; 
 }
 
 .button__tablet-main {
@@ -188,4 +214,44 @@
 
 .tablet-menu__button--arrow {
     margin-left: 15px;
+}
+
+// ------------------desktop menu-----------------
+.desktop-menu__list {
+    @media screen and (max-width: 1279px) {
+        display: none;
+    } 
+}
+
+.desktop-menu__list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.desktop-menu__item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.desktop-menu__link {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    color: #FFFFFF;
+
+    transition-property: color;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+    &:hover,
+    &:focus {
+        color: #D41443;
+    }
+}
+
+.desktop-menu__link--current {
+    color: #D41443;
 }
