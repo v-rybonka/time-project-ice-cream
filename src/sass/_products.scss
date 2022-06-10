@@ -1,4 +1,5 @@
 .products-top-text {
+    margin-bottom: 15px;
     font-size: 18px;
     line-height: 1.67;
     text-align: center;
@@ -10,6 +11,7 @@
     //     line-height: 1.15;
     // }
     @media screen and (min-width: 768px) {
+        margin-bottom: 18px;
         font-size: 26px;
         line-height: 1.15;
     }
@@ -20,6 +22,7 @@
     //     letter-spacing: 0.04em;
     // }
     @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
         font-size: 30px;
         line-height: 1.13;
         letter-spacing: 0.04em;
