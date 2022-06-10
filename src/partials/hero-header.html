@@ -1,3 +1,112 @@
-<header>
-  <h1>Header</h1>
+<!--Шапка сайта-->
+<header class="header">
+  <div class="container">
+    <div class="header__navigation">
+      <a href="" class="header__logo">
+          <img src="./images/logoicecreame1280.png" alt="logo ise-cream" width="50" />
+        &nbsp;&nbsp;ice cream
+      </a>
+      <button type="button" class="header__open-button">
+        <svg class="header__icon-button" width="20" height="12" aria-label="Переключатель мобильного меню">
+          <use class="header__icon-menu" href="./images/symbol-defs.svg#icon-Burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="mob-menu is-hidden">
+    <div class="container">
+      <button type="button" class="mob-menu__close-button">
+        <svg class="mob-menu__icon-button" width="12" height="12" aria-label="Переключатель мобильного меню">
+          <use class="mob-menu__icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <div class="mob-menu__main">
+        <button type="button" class="mob-menu__button" data-modal-open>Buy now
+          <svg class="mob-menu__button--arrow" width="5" height="8">
+            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu__list">
+          <li class="mob-menu__item">
+            <a href="" class="mob-menu__link mob-menu__link--current">Home</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="" class="mob-menu__link">About us</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="" class="mob-menu__link">How it’s made?</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="" class="mob-menu__link">Our products</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="" class="mob-menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navigations__tablet">
+    <div class="container tablet">
+      <a href="" class="header__logo">
+        <img src="./images/logoicecreame1280.png" alt="logo ise-cream" width="50" />
+        &nbsp;&nbsp;ice cream
+      </a>
+      <div class="button__tablet-main">
+        <button type="button" class="header__open-button">
+          <svg class="header__icon-button" width="20" height="12" aria-label="Переключатель мобильного меню">
+            <use class="header__icon-menu" href="./images/symbol-defs.svg#icon-Burger"></use>
+          </svg>
+        </button>
+        <button type="button" class="tablet-menu__button" data-modal-open>Buy now
+          <svg class="tablet-menu__button--arrow" width="5" height="8">
+            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- <nav class="navigations__tablet-desctop">
+    <div class="conteiner header__main--nav">
+      <a href="" class="logo">Web<span class="logo__darck">Studio</span> </a>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a href="" class="menu-list__link menu-list__link--current">Студия </a>
+        </li>
+        <li class="menu-list__item">
+          <a href="./portfolio.html" class="menu-list__link">Портфолио </a>
+        </li>
+        <li class="menu-list__item">
+          <a href="" class="menu-list__link">Контакты </a>
+        </li>
+      </ul>
+      <ul class="conect-list">
+        <li class="conect-list__item">
+          <a href="mailto:info@devstudio.com" class="conect-list__link">
+            <svg class="conect-list__icon" width="16" height="12">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>info@devstudio.com
+          </a>
+        </li>
+        <li class="conect-list__item">
+          <a href="tel:+380961111111" class="conect-list__link">
+            <svg class="conect-list__icon--tel" width="10" height="16">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
 </header>
+<!--Уникальное содержание страницы-->
+<main>
+  <!-- Блок герой, т.е верхняя часть веб-страницы -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
+      <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+    </div>
+  </section>
+</main>
