@@ -29,7 +29,7 @@
 
     @media screen and (min-width: 1280px) {
         padding-top: 37px;
-        // padding-bottom: 60px;
+        padding-bottom: 37px;
     }
 }    
 
@@ -126,10 +126,6 @@
     // stroke-width: 2px;
 }
 
-.mob-menu__list {
-
-}
-
 .mob-menu__item {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -171,14 +167,7 @@
 .navigations__tablet {
     @media screen and (max-width: 767px) {
         display: none;
-    } 
-
-    @media screen and (min-width: 1280px) {
-        // display: flex;
-        // justify-content: space-between;
-    } 
-
-        
+    }       
 }
 
 .tablet {
@@ -190,7 +179,10 @@
 .button__tablet-main {
     display: flex;
     align-items: center;
-    margin-left: auto;
+
+    @media screen and (max-width: 1279px) {
+        margin-left: auto;
+    }    
 }
 
 .tablet-menu__button {
@@ -221,9 +213,7 @@
     @media screen and (max-width: 1279px) {
         display: none;
     } 
-}
 
-.desktop-menu__list {
     display: flex;
     margin-left: auto;
     margin-right: auto;
