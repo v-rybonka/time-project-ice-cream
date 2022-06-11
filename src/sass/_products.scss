@@ -36,7 +36,7 @@
 .products-title {
     margin-bottom: 148px;
     font-family: Titan One;
-    font-weight: 400px;
+    font-weight: normal;
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -241,9 +241,10 @@
 
 
 .products-item-title {
+    position: relative;
     margin-bottom: 70px;
     font-family: Titan One;
-    font-weight: 400px;
+    font-weight: normal;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -257,9 +258,28 @@
     }
 }
 
+.products-item-title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -32pt;
+    left: 50%;
+    width: 26px;
+    height: 6px;
+    transform: translateX(-50%);
+    background-image: url(../images/Products/products-points/products-points-1x.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/Products/products-points/product-points-2x.webp);
+        }
+}
+
 .products-text {
     margin-bottom: 32px;
-    font-weight: 700px;
+    font-weight: bold;
     font-size: 14px;
     line-height: 1.52;
     letter-spacing: 0.04em;
@@ -282,5 +302,51 @@
     height: 40px;
     border: none;
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
    cursor: pointer;
+   &:hover,
+   &:focus {
+    background-color: var(--button-white-hover);
 }
+}
+.arrow {
+    fill: var(--accent-color);
+}
+
+// ------Overlay-------------
+// .products-container-text {
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// .products-text-last {
+//     position: absolute;
+//     height: 60%;
+//     top: 0;
+//     font-weight: bold;
+//     font-size: 14px;
+//     line-height: 1.52;
+//     letter-spacing: 0.04em;
+//     text-align: center;
+//     color: var(--white-color);
+//     background-color: deeppink;
+//     transform: translateY(100%);
+//     transition: var(--transition-duration);
+//     transition-timing-function: var(--transition-timing);
+//     overflow: auto;
+
+//     @include tablet {
+//         line-height: 1.76;
+//     }
+//     @include desktop {
+//         font-size: 16px;
+//         line-height: 1.76;
+//     }
+// }
+
+// .products-btn:hover .products-text-last,
+// .products-btn:focus .products-text-last {
+//     transform: translateY(0%);
+// }
