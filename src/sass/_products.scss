@@ -7,12 +7,13 @@
         padding-bottom: 60px;
     }
     @include desktop {
-        padding: 60px 16px;
+        padding-top: 60px;
     }
 }
 
 .products-top-text {
     margin-bottom: 15px;
+    font-family: Titan One;
     font-size: 18px;
     line-height: 1.67;
     text-align: center;
@@ -31,10 +32,10 @@
         line-height: 1.13;
         letter-spacing: 0.04em;
     }
-   
 }
 .products-title {
     margin-bottom: 148px;
+    font-family: Titan One;
     font-weight: 400px;
     font-size: 34px;
     line-height: 1.15;
@@ -241,6 +242,7 @@
 
 .products-item-title {
     margin-bottom: 70px;
+    font-family: Titan One;
     font-weight: 400px;
     font-size: 20px;
     line-height: 1.15;
@@ -257,7 +259,6 @@
 
 .products-text {
     margin-bottom: 32px;
-    font-family: DM Sans;
     font-weight: 700px;
     font-size: 14px;
     line-height: 1.52;
