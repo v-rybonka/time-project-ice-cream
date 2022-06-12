@@ -117,8 +117,6 @@
 }
 
 .customers-review__gradient {
-    position: relative;
-    z-index: 1;
     padding-right: 58px;
     padding-left: 65px;
     background-image: repeating-linear-gradient(to bottom,
@@ -150,7 +148,7 @@
 
 .customers-review__text {
     position: relative;
-    z-index: 3;
+    z-index: 1;
     font-weight: 500;
     font-size: 12px;
     line-height: 2.58;
@@ -177,7 +175,7 @@
     position: absolute;
     top: -14px;
     left: -15px;
-    z-index: 2;
+    z-index: -1;
     content: url(../images/Customer-Reviews/quots.svg);
     @media screen and (min-width: 480px) {
         left: -30px;
