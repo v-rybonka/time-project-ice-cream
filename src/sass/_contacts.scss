@@ -1,0 +1,215 @@
+.section--background-light {
+  background-image: linear-gradient(
+    to bottom,
+    var(--white-color) 25%,
+    #fff5f6 25%,
+    #fff5f6 50%
+  );
+}
+.container--padding-less {
+  @media screen and (min-width: 768px) {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.contacts {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+  }
+}
+
+.contacts__item {
+  padding: 40px 32px;
+  background: var(--white-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.contacts__title {
+  display: inline-block;
+
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--white-color);
+  background: #f0d1a5;
+  border-radius: 4px;
+
+  margin-bottom: 20px;
+  padding: 0px 25px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+    padding: 0px 15px;
+  }
+}
+.contacts__title--background {
+  background: #c2e297;
+}
+
+.contacts__text {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: var(--grey-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 166%;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 183%;
+  }
+  &.contacts__text--border {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e1e1e1;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+    }
+  }
+  &.contacts__text--accented {
+    line-height: 186%;
+    letter-spacing: 0.04em;
+
+    color: var(--black-text-color);
+
+    margin-bottom: 8px;
+    @media screen and (min-width: 678px) and (max-width: 1279px) {
+      margin-bottom: 12px;
+    }
+  }
+}
+.timetable {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+.timetable__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 12px;
+  }
+}
+
+.timetable__text {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+
+  color: var(--pink-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    line-height: 166%;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 183%;
+  }
+  &.timetable__text--accented {
+    letter-spacing: 0.04em;
+    color: var(--black-text-color);
+  }
+}
+.contacts__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: var(--grey-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 183%;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+.contacts-button {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.button {
+  padding: 0px 17px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0px 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0px 35px;
+  }
+
+  &.button--white {
+    padding: 0px 32px;
+
+    @media screen and (min-width: 768px) {
+      padding: 0px 37px;
+      margin-left: 15px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 0px 39px;
+    }
+  }
+}
+.contacts-button__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
