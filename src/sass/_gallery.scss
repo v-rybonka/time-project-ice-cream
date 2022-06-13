@@ -1,3 +1,18 @@
+.section--gallery {
+  padding: 0;
+
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+  }
+}
+
+.container--gallery {
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-pink-color-bcg) 30%,
+    var(--white-color) 70%
+  );
+}
 .grid {
   justify-content: center;
   border: 2px solid red;
@@ -17,6 +32,18 @@
     grid-template-rows: repeat(6, 70px);
     grid-gap: 8px;
   }
+}
+.grid__list {
+  // position: absolute;
+}
+.grid__list:hover,
+.grid__list:focus .grid__img {
+  // position: relative;
+  // z-index: 1;
+  transform: rotate(360deg);
+  transition: transform 350ms;
+  z-index: 1;
+  zoom: 1;
 }
 
 .grid__list-1 {
