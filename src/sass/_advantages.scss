@@ -1,0 +1,118 @@
+.advantages {
+  background-color: #fff5f6;
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.advantages_list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.advantages_item {
+  &:not(:first-child) {
+    margin-top: 32px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+      margin-left: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: 106px;
+    }
+  }
+
+  &::before {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &:nth-child(1n)::before {
+    display: flex;
+    content: '';
+    background-image: url(/src/images/advantages/icon1.png);
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(2n)::before {
+    display: flex;
+    content: '';
+    background-image: url(/src/images/advantages/icon2.png);
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(3n)::before {
+    display: flex;
+    content: '';
+    background-image: url(/src/images/advantages/icon3.png);
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages_name {
+  font-family: 'Titan One';
+
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    text-transform: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.137;
+  }
+
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 13px;
+  }
+}
+
+.advantages_text {
+  font-family: 'DM Sans';
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
