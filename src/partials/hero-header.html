@@ -53,19 +53,19 @@
       </a>
       <ul class="desktop-menu__list">
         <li class="desktop-menu__item">
-          <a href="" class="desktop-menu__link desktop-menu__link--current">Home</a>
+          <a href="#home" class="desktop-menu__link desktop-menu__link--current">Home</a>
         </li>
         <li class="desktop-menu__item">
-          <a href="" class="desktop-menu__link">About us</a>
+          <a href="#advantages" class="desktop-menu__link">About us</a>
         </li>
         <li class="desktop-menu__item">
-          <a href="" class="desktop-menu__link">How it’s made?</a>
+          <a href="#about" class="desktop-menu__link">How it’s made?</a>
         </li>
         <li class="desktop-menu__item">
-          <a href="" class="desktop-menu__link">Our products</a>
+          <a href="#products" class="desktop-menu__link">Our products</a>
         </li>
         <li class="desktop-menu__item">
-          <a href="" class="desktop-menu__link">Contact</a>
+          <a href="#contact" class="desktop-menu__link">Contact</a>
         </li>
       </ul>
       <div class="button__tablet-main">
@@ -75,7 +75,7 @@
           </svg>
         </button>
         <button type="button" class="tablet-menu__button" data-modal-open>Buy now
-          <svg class="tablet-menu__button--arrow" width="5" height="8">
+          <svg class="tablet-menu__button--arrow" width="7" height="10">
             <use href="./images/symbol-defs.svg#icon-arrow"></use>
           </svg>
         </button>
@@ -89,6 +89,19 @@
   <section class="hero">
     <div class="container back-circle--container">
       <div class="hero__back-circle"></div>
+      <picture>
+        <source srcset="./images/Hero-header/slider-back-hero-desk-1x.png  1x,
+                                      ./images/Hero-header/slider-back-hero-desk-2x.png  2x
+                                      " media="(min-width:1280px)" />
+        <source srcset="./images/Hero-header/slider-back-hero-tab-1x.png  1x,
+                                      ./images/Hero-header/slider-back-hero-tab-2x.png  2x
+                                      " media="(min-width:768px)" />
+        <source srcset="./images/Hero-header/slider-back-hero-mob-1x.png  1x,
+                                      ./images/Hero-header/slider-back-hero-mob-2x.png  2x
+                                      " media="(min-width:320px)" />
+        <img class="hero__back-slider hero__back-slider--icecream" src="./images/Hero-header/slider-back-hero-mob-1x.png"
+          alt="ice cream cones" />
+      </picture>  
       <div class="hero__box--left">
         <h1 class="hero__title">ice cream <br>
           made with <br><span class="hero__title--accent">passion</span></h1>
@@ -123,18 +136,7 @@
           </div>
         </div>
       </div>  
-      <picture>
-          <source srcset="./images/Hero-header/slider-back-hero-desk-1x.png  1x,
-                                ./images/Hero-header/slider-back-hero-desk-2x.png  2x
-                                " media="(min-width:1280px)" />
-          <source srcset="./images/Hero-header/slider-back-hero-tab-1x.png  1x,
-                                ./images/Hero-header/slider-back-hero-tab-2x.png  2x
-                                " media="(min-width:768px)" />
-          <source srcset="./images/Hero-header/slider-back-hero-mob-1x.png  1x,
-                                ./images/Hero-header/slider-back-hero-mob-2x.png  2x
-                                " media="(min-width:320px)" />
-          <img class="hero__back-slider hero__back-slider--icecream" src="./images/Hero-header/slider-back-hero-mob-1x.png" alt="ice cream cones" />
-      </picture>
+      
       <picture>
           <source srcset="./images/Hero-header/tasty-desk-1x.png  1x,
                                   ./images/Hero-header/tasty-desk-2x.png  2x
