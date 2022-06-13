@@ -1,0 +1,64 @@
+<section class="about">
+    <div class="container">
+      <p class="about__text">tradition and love</p>
+      <h2 class="about__title">how it’s made?</h2>
+      <div class="about__how-made">
+        <picture>
+          <source
+            srcset="
+            ./images/About/cow@1-desk.png 501w,
+              ./images/About/cow@2-desk.png 1002w
+            "
+            media="(min-width: 1280px)"
+            sizes="501px"
+          />
+          <source
+            srcset="
+            ./images/About/cow@1-tab.png 336w,
+            ./images/About/cow@2-tab.png 672w
+            "
+            media="(min-width: 768px)"
+            sizes="336px"
+          />
+          <source
+            srcset="
+            ./images/About/cow@1-mob.png 280w,
+            ./images/About/cow@2-mob.png 560w
+            "
+            media="(min-width: 320px)"
+            sizes="280px"
+          />
+          <img class="about__picture" src="./images/About/cow@1-mob.png" alt="Корова с молоком" />
+        </picture>
+        
+        <div class="about__paragraph">
+          <p class="about__top-text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+            faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </p>
+          <p class="about__center-text">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
+            rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula
+            volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+          </p>
+          <p class="about__bottom-text">Aliquam erat volutpat. Aenean accumsan.</p>
+          <button class="about__btn btn" type="button" data-dropdown-open data-dropdown-close>
+            Read more
+          </button>
+          <div class="about-dropdown is-hidden visually-hidden" data-dropdown>
+            <div class="about-content">
+              <p class="about-dropdown__text">
+                Ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat repellendus
+                tenetur fuga praesentium rem quia itaque, excepturi nemo, at possimus
+                voluptatem! Illo pariatur odio quis velit earum quasi quo.
+              </p>
+              <p class="about-dropdown__text">
+                Dolor sit amet, consectetur adipisicing elit. Neque, vel eum? Iure quaerat
+                doloremque ipsum nam, rerum ab vel id?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
