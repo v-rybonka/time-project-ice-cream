@@ -342,15 +342,6 @@
     background-color: #a6cc74;
 }
 
-
-
-.products-btn .products-description-container {
-    opacity: 0;
-}
-.products-btn.is-open .products-description-container {
-    opacity: 1;
-}
-
 .description-img {
     width: 150px;
     height: 150px;
@@ -376,3 +367,22 @@
     text-align: center;
     color: var(--accent-color);
 }
+
+.products-btn-cream .products-description-container {
+    opacity: 0;
+  }
+  .products-btn-cream.is-open .products-description-container {
+    opacity: 1;
+  }
+  .products-btn-coffee .products-description-container {
+    opacity: 0;
+  }
+  .products-btn-coffee.is-open .products-description-container {
+    opacity: 1;
+  }
+  .products-btn-milkshakes .products-description-container {
+    opacity: 0;
+  }
+  .products-btn-milkshakes.is-open .products-description-container {
+    opacity: 1;
+  }
