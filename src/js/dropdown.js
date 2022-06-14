@@ -10,6 +10,5 @@
   
     function toggleDropdown() {
       refs.dropdown.classList.toggle('is-hidden');
-      refs.dropdown.classList.toggle('visually-hidden');
     }
   })();
