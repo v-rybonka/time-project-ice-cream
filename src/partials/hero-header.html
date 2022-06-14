@@ -1,56 +1,11 @@
 <!--Шапка сайта-->
-<header id="logo" class="header">
-  <div class="container header__navigation">
-    <a href="#logo" class="header__logo">
+<header id="header" class="header">
+  <div class="container header__nav">
+    <a href="#header" class="header__logo">
       <img src="./images/Hero-header/logoicecreame1280.png" alt="logo ise-cream" width="50" />
       &nbsp;&nbsp;ice cream
     </a>
-    <button type="button" class="header__open-button">
-      <svg class="header__icon-button" width="20" height="12" aria-label="Переключатель мобильного меню">
-        <use class="header__icon-menu" href="./images/symbol-defs.svg#icon-Burger"></use>
-      </svg>
-    </button>
-  </div>
-  <div class="mob-menu is-hidden">
-    <div class="container">
-      <button type="button" class="mob-menu__close-button">
-        <svg class="mob-menu__icon-button" width="12" height="12" aria-label="Переключатель мобильного меню">
-          <use class="mob-menu__icon-close" href="./images/symbol-defs.svg#icon-close"></use>
-        </svg>
-      </button>
-
-      <div class="mob-menu__main">
-        <button type="button" class="mob-menu__button" data-modal-open>Buy now
-          <svg class="mob-menu__button--arrow" width="8" height="12">
-            <use href="./images/symbol-defs.svg#icon-arrow"></use>
-          </svg>
-        </button>
-        <ul class="mob-menu__list">
-          <li class="mob-menu__item">
-            <a href="" class="mob-menu__link mob-menu__link--current">Home</a>
-          </li>
-          <li class="mob-menu__item">
-            <a href="" class="mob-menu__link">About us</a>
-          </li>
-          <li class="mob-menu__item">
-            <a href="#about" class="mob-menu__link">How it’s made?</a>
-          </li>
-          <li class="mob-menu__item">
-            <a href="#products" class="mob-menu__link">Our products</a>
-          </li>
-          <li class="mob-menu__item">
-            <a href="" class="mob-menu__link">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <nav class="navigations__tablet">
-    <div class="container tablet">
-      <a href="#logo" class="header__logo">
-        <img src="./images/Hero-header/logoicecreame1280.png" alt="logo ise-cream" width="50" />
-        &nbsp;&nbsp;ice cream
-      </a>
+    <nav class="desktop-menu--main">
       <ul class="desktop-menu__list">
         <li class="desktop-menu__item">
           <a href="#home" class="desktop-menu__link desktop-menu__link--current">Home</a>
@@ -68,20 +23,50 @@
           <a href="#contacts" class="desktop-menu__link">Contact</a>
         </li>
       </ul>
-      <div class="button__tablet-main">
-        <button type="button" class="header__open-button">
-          <svg class="header__icon-button" width="20" height="12" aria-label="Переключатель мобильного меню">
-            <use class="header__icon-menu" href="./images/symbol-defs.svg#icon-Burger"></use>
-          </svg>
-        </button>
-        <button type="button" class="tablet-menu__button" data-modal-open>Buy now
-          <svg class="tablet-menu__button--arrow" width="8" height="12">
-            <use href="./images/symbol-defs.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </div>
+    </nav>
+    <button type="button" class="header__button-open">
+      <svg class="header__icon-button" width="20" height="12" aria-label="Переключатель мобильного меню">
+        <use class="header__icon-img" href="./images/symbol-defs.svg#icon-Burger"></use>
+      </svg>
+    </button>
+    <button type="button" class="header__button--tab-desk">Buy now
+      <svg class="header__button--arrow" width="8" height="12">
+        <use href="./images/symbol-defs.svg#icon-arrow"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mob-menu is-hidden">
+    <div class="container">
+      <button type="button" class="header__button-close">
+        <svg class="mob-menu__icon-button" width="12" height="12" aria-label="Переключатель мобильного меню">
+          <use class="mob-menu__icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button type="button" class="mob-menu__button">Buy now
+        <svg class="mob-menu__button--arrow" width="8" height="12">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </button>
+      <ul class="mob-menu__list">
+        <li class="mob-menu__item">
+          <a href="#home" class="mob-menu__link mob-menu__link--current">Home</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#advantages" class="mob-menu__link">About us</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#about" class="mob-menu__link">How it’s made?</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#products" class="mob-menu__link">Our products</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#contacts" class="mob-menu__link">Contact</a>
+        </li>
+      </ul>
+      
     </div>
-  </nav>
+  </div>
 </header>  
 <!--Уникальное содержание страницы-->
 <!-- <main id=""> -->
