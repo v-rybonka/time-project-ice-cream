@@ -76,9 +76,12 @@
 }
 
 .mob-menu__button {
-    display: block;
+    display: flex;
+    align-items: center;
+    
     padding: 10px 50px;
-    margin: 26px auto 19px auto;
+    margin-left: auto;
+    margin-right: auto;
 
     font-weight: 700;
     font-size: 16px;
@@ -100,6 +103,7 @@
 
 .mob-menu__button--arrow {
     margin-left: 15px;
+    
 
     // fill: #D41443;
     // stroke: #D41443;
@@ -174,8 +178,12 @@
 }
 
 .tablet-menu__button {
-    display: block;
+    display: flex;
+    align-items: center;
+    
     padding: 10px 37px;
+    margin-left: auto;
+    margin-right: auto;
     
     font-weight: 700;
     font-size: 16px;
@@ -206,6 +214,8 @@
     } 
 
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
 }
@@ -215,6 +225,12 @@
 }
 
 .desktop-menu__link {
+    display: block;
+    position: relative;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
@@ -233,6 +249,27 @@
 
 .desktop-menu__link--current {
     color: var(--accent-color);
+
+    &::after {
+        position: absolute;
+        display: block;
+
+        content: "";
+        width: 100%;
+        height: 2px;
+
+        bottom: 15px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        opacity: 1;
+
+        transition: opacity 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+            // &:hover,
+            // &:focus {
+            //     opacity: 1;
+            // }
+    }
 }
 
 
@@ -245,7 +282,7 @@
     background-color: #FFB8CA;   
 }
 
-.back-circle--container {
+.hero__container {
     position: relative;
     overflow: hidden;
 
@@ -262,6 +299,19 @@
         padding-bottom: 60px;
     }       
 }
+
+
+
+
+.hero__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
 
 .hero__back-circle {
     position: absolute;
@@ -441,7 +491,7 @@
 
     transition-property: background-color;
     transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
     transition-delay: 0;
 
     &:hover,
@@ -536,22 +586,42 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
-
-    position: absolute;
-    top: 92px;
-    right: 32px;
+    
+    padding-right: 9px;
 
     @media screen and (min-width: 1280px) {
-        top: 153px;
-        right: 16px;
-    }
+        padding-right: 12px;
+    } 
 }
 
+.hero__network--item {
+    position: relative;
+    z-index: 1;
+}
 .hero__network--item:not(:last-child) {
     margin-bottom: 15px;
 }
 
 .hero__network--text {
+    display: block;
+
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    text-transform: none;
+
+    color: var(--white-color);
+
+    @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.29;
+    }   
+}
+
+.hero__network--text-accent {
+    display: block;
+    
+    // z-index: 2;
     font-family: 'Titan One';
     font-size: 28px;
     line-height: 1.14;
@@ -565,45 +635,33 @@
     @media screen and (min-width: 1280px) {
         font-size: 46px;
         line-height: 1.15;
-    }
-}
-
-.hero__network--text::after {
-    z-index: -1;
-    position: absolute;
-    top: -2px;
-    right: -8px;
-
-    content: "";
-    width: 16px;
-    height: 16px;
+    } 
     
-    background-color: var(--white-color);
-    border-radius: 50%;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-
-    @media screen and (min-width: 1280px) {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-.hero__network--textsmall {
-    display: block;
     
-    font-family: 'DM Sans';
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: right;
-    text-transform: none;
+        &::after {
+            z-index: -1;
+            position: absolute;
+            top: -1px;
+            right: -9px;
 
-    color: var(--white-color);
+            content: "";
+            width: 16px;
+            height: 16px;
 
-    @media screen and (min-width: 1280px) {
-        font-size: 14px;
-        line-height: 1.29;
-    }               
+            background-color: var(--white-color);
+            border-radius: 50%;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+
+            @media screen and (min-width: 1280px) {
+                width: 30px;
+                height: 30px;
+                top: -8px;
+                right: -12px;
+            }
+        }
 }
+
+
 
 // .is-hidden {
 //     opacity: 0;
