@@ -36,14 +36,15 @@
   }
 }
 .grid__list {
+  z-index: 1;
   display: flex;
   transition: transform 250ms var(--transition-timing);
 }
 .grid__list:hover,
 .grid__list:focus .grid__img {
-  transform: rotate(360deg) scale(1.5);
+  transform: rotate(360deg) scale(1.2);
 
-  z-index: 1;
+  z-index: 2;
 }
 
 .grid__list-1 {
