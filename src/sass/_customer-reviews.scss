@@ -37,10 +37,6 @@
     height: 20px;
 }
 //--------------------------------------------------------
-.container--color {
-    background-color: blue;
-}
-
 .customers-review {
     margin-left: auto;
     margin-right: auto;
@@ -78,6 +74,7 @@
 .customers-review__image {
     border-radius: 50%;
 }
+
 .customers-review__wrap {
     position: relative;
     background-color: #FAFAFA;
@@ -92,29 +89,33 @@
         padding-top: 47px;
         padding-bottom: 39px;
     }
+
+        &::after {
+            position: absolute;
+            top: 315px;
+            left: 120px;
+            content: "...";
+            font-size: 30px;
+            letter-spacing: 10px;
+            color: var(--button-accent-hover);
+
+            @media screen and (min-width: 480px) {
+                top: 222px;
+                left: 180px;
+            }
+
+            @media screen and (min-width: 768px) {
+                top: 193px;
+                left: 295px;
+            }
+
+        @media screen and (min-width: 1280px) {
+            top: 205px;
+            left: 500px;
+        }
+    }
 }
 
-.customers-review__wrap::after {
-    position: absolute;
-    top: 315px;
-    left: 120px;
-    content: "...";
-    font-size: 30px;
-    letter-spacing: 10px;
-    color: var(--button-accent-hover);
-    @media screen and (min-width: 480px) {
-        top: 222px;
-        left: 180px;
-    }
-    @media screen and (min-width: 768px) {
-        top: 193px;
-        left: 295px;
-    }
-    @media screen and (min-width: 1280px) {
-        top: 205px;
-        left: 500px;
-    }
-}
 
 .customers-review__gradient {
     padding-right: 58px;
@@ -169,26 +170,29 @@
         margin-top: 36px;
         
     }
+        &::before {
+            position: absolute;
+            top: -14px;
+            left: -15px;
+            z-index: -1;
+            content: url(../images/Customer-Reviews/quots.svg);
+
+            @media screen and (min-width: 480px) {
+                left: -30px;
+            }
+
+            @media screen and (min-width: 768px) {
+                top: -18px;
+                left: -42px;
+            }
+
+            @media screen and (min-width: 1280px) {
+                top: -15px;
+                left: -36px;
+            }
+        }
 }
 
-.customers-review__text::before {
-    position: absolute;
-    top: -14px;
-    left: -15px;
-    z-index: -1;
-    content: url(../images/Customer-Reviews/quots.svg);
-    @media screen and (min-width: 480px) {
-        left: -30px;
-    }
-    @media screen and (min-width: 768px) {
-        top: -18px;
-        left: -42px;
-    }
-    @media screen and (min-width: 1280px) {
-        top: -15px;
-        left: -36px;
-    }
-}
 
 .customers-review__name {
     background-color: transparent;
