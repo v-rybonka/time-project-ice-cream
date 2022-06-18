@@ -1,17 +1,22 @@
 .advantages {
   background-color: #fff5f6;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 80px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 84px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 120px;
   }
+}
+
+.advantages_title {
+  position: relative;
+  bottom: 60px;
 }
 
 .advantages_list {
